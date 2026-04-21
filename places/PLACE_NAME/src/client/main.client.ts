@@ -1,0 +1,10 @@
+import { Flamework } from "@flamework/core"
+
+/// Flamework initialization
+Flamework.addPaths("places/PLACE_NAME/src/client/controllers")
+Flamework.addPaths("places/PLACE_NAME/src/client/components")
+Flamework.addPaths("places/common/src/client/controllers")
+Flamework.addPaths("places/common/src/client/components")
+Flamework.addPaths("places/common/src/shared/components")
+
+Flamework.ignite()

@@ -1,0 +1,86 @@
+{
+    "name": "game",
+    "servePort": 8030,
+    "globIgnorePaths": ["**/package.json", "**/tsconfig.json"],
+    "tree": {
+        "$className": "DataModel",
+
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+
+            "CommonShared": {
+                "$className": "Folder",
+                "$path": "out/common/src/shared"
+            },
+
+            "PlaceShared": {
+                "$className": "Folder",
+                "$path": "out/game/src/shared"
+            },
+
+            "rbxts_include": {
+                "$path": "include",
+                "node_modules": {
+                    "$className": "Folder",
+                    "@rbxts": {
+                        "$className": "Folder",
+                        "$path": "../../node_modules/@rbxts"
+                    },
+
+                    "@flamework": {
+                        "$className": "Folder",
+                        "$path": "../../node_modules/@flamework"
+                    }
+                }
+            }
+        },
+
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+
+            "CommonServer": {
+                "$className": "Folder",
+                "$path": "out/common/src/server"
+            },
+
+            "PlaceServer": {
+                "$className": "Folder",
+                "$path": "out/game/src/server"
+            }
+        },
+
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+
+                "CommonClient": {
+                    "$className": "Folder",
+                    "$path": "out/common/src/client"
+                },
+
+                "PlaceClient": {
+                    "$className": "Folder",
+                    "$path": "out/game/src/client"
+                }
+            }
+        },
+
+        "Workspace": {
+            "$className": "Workspace",
+            
+            "$properties": {
+                "FilteringEnabled": true
+            }
+        },
+
+        "SoundService": {
+            "$className": "SoundService",
+
+            "$properties": {
+                "RespectFilteringEnabled": true
+            }
+        }
+    }
+}
